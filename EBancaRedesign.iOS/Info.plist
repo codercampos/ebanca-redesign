@@ -34,5 +34,21 @@
     <string>EBancaRedesign</string>
     <key>XSAppIconAssets</key>
     <string>Assets.xcassets/AppIcon.appiconset</string>
+    <key>UIAppFonts</key>
+    <array>
+        <string>Fonts/OpenSans-Bold.ttf</string>
+        <string>Fonts/OpenSans-BoldItalic.ttf</string>
+        <string>Fonts/OpenSans-ExtraBold.ttf</string>
+        <string>Fonts/OpenSans-ExtraBoldItalic.ttf</string>
+        <string>Fonts/OpenSans-Italic.ttf</string>
+        <string>Fonts/OpenSans-Light.ttf</string>
+        <string>Fonts/OpenSans-LightItalic.ttf</string>
+        <string>Fonts/OpenSansRegular.ttf</string>
+        <string>Fonts/OpenSans-SemiBold.ttf</string>
+        <string>Fonts/OpenSans-SemiBoldItalic.ttf</string>
+        <string>Fonts/FontAwesomeBrands.otf</string>
+        <string>Fonts/FontAwesomeRegular.otf</string>
+        <string>Fonts/FontAwesomeSolid.otf</string>
+    </array>
 </dict>
 </plist>

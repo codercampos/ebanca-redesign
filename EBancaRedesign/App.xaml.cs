@@ -18,6 +18,7 @@ namespace EBancaRedesign
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<LoginPage, LoginViewModel>("Login");
         }
 

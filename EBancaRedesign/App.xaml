@@ -2,8 +2,13 @@
 <dryIoc:PrismApplication xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:dryIoc="http://prismlibrary.com"
+             xmlns:xaml="clr-namespace:EBancaRedesign.Xaml;assembly=EBancaRedesign"
              x:Class="EBancaRedesign.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <xaml:Theme />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </dryIoc:PrismApplication>

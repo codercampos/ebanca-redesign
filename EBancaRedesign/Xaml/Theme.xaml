@@ -4,7 +4,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EBancaRedesign.Xaml.Theme">
     <Color x:Key="WindowBackgroundColor">#DFDFDF</Color>
-    <Color x:Key="PrimaryColor">#000000</Color>
+    <Color x:Key="PrimaryColor">#014390</Color>
     <Color x:Key="LightPrimaryColor">#000000</Color>
     <Color x:Key="DarkPrimaryColor">#000000</Color>
     <Color x:Key="SecondaryColor">#000000</Color>
@@ -13,4 +13,34 @@
     <Color x:Key="DefaultTextColor">#000000</Color>
     <Color x:Key="PlaceholderColor">#000000</Color>
     <Color x:Key="AccentColor">#000000</Color>
+    
+    <OnPlatform x:Key="OpenSansBold" x:TypeArguments="x:String">
+        <On Platform="iOS" Value="OpenSans-Bold" />
+        <On Platform="Android" Value="OpenSans_Bold.ttf#OpenSans Bold" />
+    </OnPlatform>
+    
+    <OnPlatform x:Key="OpenSansRegular" x:TypeArguments="x:String">
+        <On Platform="iOS" Value="OpenSans-Bold" />
+        <On Platform="Android" Value="OpenSans_Bold.ttf#OpenSans Bold" />
+    </OnPlatform>
+    
+    <OnPlatform x:Key="OpenSansLight" x:TypeArguments="x:String">
+        <On Platform="iOS" Value="OpenSans-Regular" />
+        <On Platform="Android" Value="OpenSans_Regular.ttf#OpenSans Regular" />
+    </OnPlatform>
+    
+    <Style x:Key="BaseButton" TargetType="Button">
+        <Setter Property="HeightRequest" Value="40" />
+        <Setter Property="CornerRadius" Value="10" />
+        <Setter Property="FontFamily" Value="{StaticResource OpenSansBold}"></Setter>
+    </Style>
+    <Style x:Key="PrimaryButton" TargetType="Button" BasedOn="{StaticResource BaseButton}">
+        <Setter Property="Background" Value="{StaticResource PrimaryColor}" />
+        <Setter Property="TextColor" Value="White" />
+    </Style>
+    <Style x:Key="SecondaryButton" TargetType="Button" BasedOn="{StaticResource BaseButton}">
+        <Setter Property="TextColor" Value="{StaticResource PrimaryColor}" />
+        <Setter Property="BorderColor" Value="{StaticResource PrimaryColor}" />
+        <Setter Property="BorderWidth" Value="1" />
+    </Style>
 </ResourceDictionary>
